@@ -38,7 +38,7 @@
 
 **聊天页面**
 
-![聊天页面](C:\Users\16013\AppData\Roaming\Typora\typora-user-images\image-20210815024843127.png)
+![聊天页面](https://gitee.com/xunle1/drawing-bed/raw/master/typora%5C/20210815031055.png)
 
 ## 部署过程
 
