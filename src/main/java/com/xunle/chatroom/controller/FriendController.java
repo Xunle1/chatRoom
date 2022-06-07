@@ -2,12 +2,11 @@ package com.xunle.chatroom.controller;
 
 
 import com.xunle.chatroom.entity.FriendReq;
-import com.xunle.chatroom.entity.User;
 import com.xunle.chatroom.entity.vo.FriendReqVO;
 import com.xunle.chatroom.entity.vo.FriendVO;
 import com.xunle.chatroom.service.FriendReqService;
 import com.xunle.chatroom.service.FriendService;
-import com.xunle.chatroom.utils.Response;
+import com.xunle.chatroom.common.Response;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

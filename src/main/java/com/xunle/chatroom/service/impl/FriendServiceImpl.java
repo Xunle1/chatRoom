@@ -7,12 +7,11 @@ import com.xunle.chatroom.entity.User;
 import com.xunle.chatroom.entity.vo.FriendVO;
 import com.xunle.chatroom.handler.ServiceException;
 import com.xunle.chatroom.mapper.FriendMapper;
-import com.xunle.chatroom.mapper.UserMapper;
 import com.xunle.chatroom.service.FriendReqService;
 import com.xunle.chatroom.service.FriendService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xunle.chatroom.service.UserService;
-import com.xunle.chatroom.utils.ResultCode;
+import com.xunle.chatroom.common.ResultCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

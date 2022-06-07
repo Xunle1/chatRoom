@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.xunle.chatroom.entity.Message;
 import com.xunle.chatroom.entity.vo.MessageVO;
 import com.xunle.chatroom.service.MessageService;
-import com.xunle.chatroom.utils.Response;
+import com.xunle.chatroom.common.Response;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.BeanUtils;

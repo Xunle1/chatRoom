@@ -10,7 +10,7 @@ import com.xunle.chatroom.service.UserCenterService;
 import com.xunle.chatroom.service.UserService;
 import com.xunle.chatroom.utils.JwtUtils;
 import com.xunle.chatroom.utils.MD5;
-import com.xunle.chatroom.utils.ResultCode;
+import com.xunle.chatroom.common.ResultCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

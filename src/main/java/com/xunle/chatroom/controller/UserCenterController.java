@@ -4,7 +4,7 @@ import com.xunle.chatroom.entity.User;
 import com.xunle.chatroom.entity.vo.UserLoginVo;
 import com.xunle.chatroom.service.UserCenterService;
 import com.xunle.chatroom.utils.JwtUtils;
-import com.xunle.chatroom.utils.Response;
+import com.xunle.chatroom.common.Response;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -26,8 +26,11 @@ public class UserCenterController {
     @PostMapping("/login")
     public Response loginUser(@RequestBody UserLoginVo user) {
         String token = userCenterService.login(user);
-        System.out.println("token = " + token);
-        return Response.ok().data("token", token);
+        if (token != null && token.length() > 0) {
+            return Response.ok().data("token", token);
+        } else {
+            return Response.error();
+        }
     }
 
     @PostMapping("/register")
@@ -48,7 +51,8 @@ public class UserCenterController {
         return Response.ok().data("id", userId)
                 .data("name", user.getUsername())
                 .data("roles", "admin")
-                .data("avatar", user.getAvatar());
+                .data("avatar", user.getAvatar())
+                .data("sign", user.getSign());
     }
 
 }

@@ -4,7 +4,7 @@ package com.xunle.chatroom.controller;
 import com.xunle.chatroom.entity.Room;
 import com.xunle.chatroom.entity.vo.UserVO;
 import com.xunle.chatroom.service.RoomService;
-import com.xunle.chatroom.utils.Response;
+import com.xunle.chatroom.common.Response;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

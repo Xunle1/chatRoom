@@ -1,7 +1,7 @@
 package com.xunle.chatroom.controller;
 
 import com.xunle.chatroom.service.OssService;
-import com.xunle.chatroom.utils.Response;
+import com.xunle.chatroom.common.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;

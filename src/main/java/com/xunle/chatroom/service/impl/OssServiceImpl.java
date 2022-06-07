@@ -6,7 +6,7 @@ import com.aliyun.oss.OSSClientBuilder;
 import com.aliyun.oss.model.GeneratePresignedUrlRequest;
 import com.aliyun.oss.model.ObjectMetadata;
 import com.xunle.chatroom.service.OssService;
-import com.xunle.chatroom.utils.ConstantPropertiesUtils;
+import com.xunle.chatroom.common.ConstantPropertiesUtils;
 import org.joda.time.DateTime;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -57,7 +57,7 @@ public class OssServiceImpl implements OssService {
             String url = null;
 
             // 指定签名URL过期时间为10分钟。
-            Date expiration = new Date(new Date().getTime() + 1000 * 60 * 10 );
+            Date expiration = new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 7 );
             GeneratePresignedUrlRequest req = new GeneratePresignedUrlRequest(bucketName, fileName, HttpMethod.GET);
             req.setExpiration(expiration);
             URL signedUrl = ossClient.generatePresignedUrl(req);

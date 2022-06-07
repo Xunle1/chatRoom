@@ -11,7 +11,7 @@ import com.xunle.chatroom.service.RelationService;
 import com.xunle.chatroom.service.RoomService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xunle.chatroom.service.UserService;
-import com.xunle.chatroom.utils.ResultCode;
+import com.xunle.chatroom.common.ResultCode;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

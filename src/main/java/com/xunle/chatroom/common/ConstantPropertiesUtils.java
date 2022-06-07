@@ -1,4 +1,4 @@
-package com.xunle.chatroom.utils;
+package com.xunle.chatroom.common;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;

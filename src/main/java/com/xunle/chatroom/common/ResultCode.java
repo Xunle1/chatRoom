@@ -1,4 +1,4 @@
-package com.xunle.chatroom.utils;
+package com.xunle.chatroom.common;
 
 /**
  * @author xunle

@@ -2,20 +2,15 @@ package com.xunle.chatroom.controller;
 
 import com.xunle.chatroom.entity.MessageRequest;
 import com.xunle.chatroom.entity.MessageResponse;
-import com.xunle.chatroom.entity.vo.MessageVO;
-import com.xunle.chatroom.entity.vo.UserVO;
 import com.xunle.chatroom.handler.ServiceException;
 import com.xunle.chatroom.service.MessageService;
 import com.xunle.chatroom.service.RoomService;
-import com.xunle.chatroom.utils.ResultCode;
+import com.xunle.chatroom.common.ResultCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
-import org.springframework.messaging.simp.annotation.SendToUser;
-import org.springframework.messaging.simp.stomp.StompHeaderAccessor;
 import org.springframework.stereotype.Controller;
 
 
