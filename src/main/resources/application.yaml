@@ -11,6 +11,18 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
   profiles:
     active: dev
+  redis:
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+    host: 47.98.149.186
+    port: 6379
+    database: 0
+    timeout: 1800000
+    password: Ww46288700
 
 mybatis-plus:
   configuration:
@@ -32,4 +44,3 @@ aliyun:
       #阿里云bucket密码
       keySecret: keySecret
       bucketName: xunle-chatroom
-
